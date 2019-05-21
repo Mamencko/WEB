@@ -25,46 +25,38 @@
 }
 
   body,html{
-    background-color:#F4F4F4;
+    background-color:rgb(241, 241, 241);
     display: flex;
     flex-direction: column;
 }
+
 header > span{
     font-family: "Just Another Hand";
     color: rgb(230, 236, 252);
     font-size: 250%;
-    margin-left: 4%;
+    padding-left: 5%;
 }
 
 header > form{
-    float: right;
-	width: auto;
-	height: auto;
-	margin-right: 10%;
-	display: block;
+    padding-right: 10%;
 }
 
 header{
     background-color: rgb(70, 70, 70);
-    padding: 1%
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
 }
 
 input[type="search"]{
     font: 16px/1.6 Helvetica, sans-serif;
-	color: #686868;
+    color: rgb(110, 110, 110);
 	padding: 4px 4px 4px 46px;
-	width: 150%;
-	border:solid 2px #FFF;
+	width: 125%;
+	border:solid 2px rgb(226, 226, 226);
 	border-radius: 20px;
-	-moz-appearance: none;
-	-webkit-appearance: none;
-    box-shadow: none; 
-	outline: 0;
-	margin: 0;
 	background: url("../MyWebSite/img/icon-search.svg") no-repeat 12px 7px;
-	vertical-align:center;
-	margin-left:-40px;
-	background-color:#FFF;
+    background-color:rgb(255, 255, 255);
 }
 
 nav > ul > li{
@@ -139,5 +131,42 @@ figure > img{
 
 footer{
     background-color: rgb(70, 70, 70);
-    padding: 1%;
+    padding: 1.5%;
+    display: inline;
+}
+
+.social_networks{
+    width: 3%;
+    height: 3%;
+    margin-right: 1%;
+    float: right;
+    transition-property: width, height;
+    transition-duration: 1s;
+}
+
+.social_networks:hover{
+    width: 3.5%;
+    height: 3.5%;
+}
+
+@media screen and (max-width: 590px){
+    header{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        padding: 3%
+    }
+
+    nav > ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: space-around;
+    }
+
+    .social_networks{
+        width: 10%;
+        height: 10%;
+        margin-right: 3%;
+    }
 }
