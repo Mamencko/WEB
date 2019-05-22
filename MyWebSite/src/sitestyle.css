@@ -4,11 +4,11 @@
     font-weight: 400;
     src: url('../fonts/roboto-v19-cyrillic_latin-regular.eot');
     src: local('Roboto'), local('Roboto-Regular'),
-         url('../MyWebSite/fonts/roboto-v19-cyrillic_latin-regular.eot') format('embedded-opentype'),
-         url('../MyWebSite/fonts/roboto-v19-cyrillic_latin-regular.woff2') format('woff2'),
-         url('../MyWebSite/fonts/roboto-v19-cyrillic_latin-regular.woff') format('woff'),
-         url('../MyWebSite/fonts/roboto-v19-cyrillic_latin-regular.ttf') format('truetype'),
-         url('../MyWebSite/fonts/roboto-v19-cyrillic_latin-regular.svg') format('svg');
+         url('fonts/roboto-v19-cyrillic_latin-regular.eot') format('embedded-opentype'),
+         url('fonts/roboto-v19-cyrillic_latin-regular.woff2') format('woff2'),
+         url('fonts/roboto-v19-cyrillic_latin-regular.woff') format('woff'),
+         url('fonts/roboto-v19-cyrillic_latin-regular.ttf') format('truetype'),
+         url('fonts/roboto-v19-cyrillic_latin-regular.svg') format('svg');
   }
 
 @font-face {
@@ -17,11 +17,11 @@
     font-weight: 400;
     src: url('../fonts/just-another-hand-v10-latin-regular.eot');
     src: local("Just Another Hand Regular"), local("JustAnotherHand-Regular"),
-         url("../MyWebSite/fonts/just-another-hand-v10-latin-regular.eot") format('embedded-opentype'),
-         url("../MyWebSite/fonts/just-another-hand-v10-latin-regular.woff2") format('woff2'),
-         url('../MyWebSite/fonts/just-another-hand-v10-latin-regular.woff') format('woff'),
-         url('../MyWebSite/fonts/just-another-hand-v10-latin-regular.ttf') format('truetype'),
-         url('../MyWebSite/fonts/just-another-hand-v10-latin-regular.svg') format('svg');
+         url("fonts/just-another-hand-v10-latin-regular.eot") format('embedded-opentype'),
+         url("fonts/just-another-hand-v10-latin-regular.woff2") format('woff2'),
+         url('fonts/just-another-hand-v10-latin-regular.woff') format('woff'),
+         url('fonts/just-another-hand-v10-latin-regular.ttf') format('truetype'),
+         url('fonts/just-another-hand-v10-latin-regular.svg') format('svg');
 }
 
   body,html{
@@ -30,18 +30,19 @@
     flex-direction: column;
 }
 
-header > span{
+#head > span{
     font-family: "Just Another Hand";
     color: rgb(230, 236, 252);
     font-size: 250%;
     padding-left: 5%;
+    white-space: nowrap;
 }
 
-header > form{
+#head > form{
     padding-right: 10%;
 }
 
-header{
+#head{
     background-color: rgb(70, 70, 70);
     padding: 1%;
     display: flex;
@@ -55,7 +56,7 @@ input[type="search"]{
 	width: 125%;
 	border:solid 2px rgb(226, 226, 226);
 	border-radius: 20px;
-	background: url("../MyWebSite/img/icon-search.svg") no-repeat 12px 7px;
+	background: url("img/icon-search.svg") no-repeat 12px 7px;
     background-color:rgb(255, 255, 255);
 }
 
@@ -87,7 +88,7 @@ nav{
     justify-content: center;
 }
 
-figure{
+.post_block{
     width: 250px;
     height: 300px;
     background: white;
@@ -96,7 +97,7 @@ figure{
     background: no-repeat center center;
 }
 
-figure > img{
+.post_block > img{
     width: 250px;
     height: 200px;
 }
@@ -115,18 +116,43 @@ figure > img{
     margin: 5%;
 }
 
+.post{
+    width: 70%;
+    height: auto;
+    background: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    margin: 3%;
+}
+
+#article_head > h2{
+    padding-left: 3%;
+    padding-top: 3%;
+    font-weight: bold;
+}
+
+#article_body{
+    padding: 4%;
+}
+
+#article_info{
+    padding: 0 0 4% 4%;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
 #nav_buttons{
-    margin: 3% 1%;
+    margin: 3%;
     display: flex;
     justify-content: center;
 }
 
 .nav_but{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     border: solid 2px rgb(117, 138, 139);
-    background-color: #FFF;
+    background-color: rgb(255, 255, 255);
+    font-family: "Roboto";
 }
 
 footer{
@@ -150,7 +176,7 @@ footer{
 }
 
 @media screen and (max-width: 590px){
-    header{
+    #head{
         flex-wrap: wrap;
         justify-content: center;
         align-content: center;
@@ -162,6 +188,10 @@ footer{
         flex-wrap: wrap;
         justify-content: space-evenly;
         align-content: space-around;
+    }
+
+    .post{
+        width: 93%;
     }
 
     .social_networks{

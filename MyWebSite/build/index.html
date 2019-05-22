@@ -7,9 +7,11 @@
     <title>Game News</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="sitestyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="animation.js"></script>
 </head>
 <body>
-    <header>
+    <header id="head">
         <span>Game News</span>
         <form>
             <input type="search">
@@ -17,7 +19,7 @@
     </header>
     <nav>
         <ul>
-            <li><a href="">NEWS</a></li>
+            <li><a href="index.html">NEWS</a></li>
             <li><a href="">GAMES</a></li>
             <li><a href="">HARDWARE</li>
             <li><a href="">PC</a></li>
@@ -28,83 +30,83 @@
     </nav>
     <main>
         <div id="posts">
-            <figure>
-                <img src="../MyWebSite/img/TCGhostReconBreakpoint.jpg" alt="Image not found">
-                <p class="post_article"><a href="">Ghost Recon Breakpoint - трейлер, геймплей, детали</a></p>
+            <figure class="post_block">
+                <img src="img/TCGhostReconBreakpoint.jpg" alt="Image not found">
+                <p class="post_article"><a href="post.html">Ghost Recon Breakpoint - трейлер, геймплей, детали</a></p>
                 <p class="post_info">Date: 10.05.2019, Author: <a href="">kopasov</a> </p>
             </figure>
-            <figure>
-                <img src="../MyWebSite/img/EllerosOriginsWytchsun.jpg" alt="Image not found">
+            <figure class="post_block">
+                <img src="img/EllerosOriginsWytchsun.jpg" alt="Image not found">
                 <p class="post_article"><a href="">Elleros Origins: Wytchsun - анонс игры</a></p>
                 <p class="post_info">Date: 27.04.2019, Author: <a href="">kopasov</a> </p>
             </figure>
-            <figure>
-                <img src="../MyWebSite/img/TheElderScrollsBlades.jpg" alt="Image not found">
+            <figure class="post_block">
+                <img src="img/TheElderScrollsBlades.jpg" alt="Image not found">
                 <p class="post_article"><a href="">The Elder Scrolls: Blades для iOS и Android.</a></p>
                 <p class="post_info">Date: 05.04.2019, Author: <a href="">damirchik</a> </p>
             </figure>
-            <figure>
-                <img src="../MyWebSite/img/VampireTheMasqueradeBloodlines2.jpg" alt="Image not found">
+            <figure class="post_block">
+                <img src="img/VampireTheMasqueradeBloodlines2.jpg" alt="Image not found">
                 <p class="post_article"><a href="">Анонсирована Vampire: The Masquerade - Bloodlines 2</a></p>
                 <p class="post_info">Date: 22.03.2019, Author: <a href="">Гидеон_Лорр</a> </p>
             </figure>
-            <figure>
-                <img src="../MyWebSite/img/SekiroShadowsDieTwice.jpg" alt="Image not found">
+            <figure class="post_block">
+                <img src="img/SekiroShadowsDieTwice.jpg" alt="Image not found">
                 <p class="post_article"><a href="">Sekiro: Shadows Die Twice</a></p>
                 <p class="post_info">Date: 20.03.2019, Author: <a href="">damirchik</a> </p>
             </figure>
-            <figure>
-                <img src="../MyWebSite/img/TCGhostReconBreakpoint.jpg" alt="Image not found">
+            <figure class="post_block">
+                <img src="img/TCGhostReconBreakpoint.jpg" alt="Image not found">
                 <p class="post_article"><a href="">Ghost Recon Breakpoint - трейлер, геймплей, детали</a></p>
                 <p class="post_info">Date: 10.05.19, Author: <a href="">kopasov</a> </p>
             </figure>
-            <figure>
-                <img src="../MyWebSite/img/TCGhostReconBreakpoint.jpg" alt="Image not found">
+            <figure class="post_block">
+                <img src="img/TCGhostReconBreakpoint.jpg" alt="Image not found">
                 <p class="post_article"><a href="">Ghost Recon Breakpoint - трейлер, геймплей, детали</a></p>
                 <p class="post_info">Date: 10.05.19, Author: <a href="">kopasov</a> </p>
             </figure>
-            <figure>
-                <img src="../MyWebSite/img/TCGhostReconBreakpoint.jpg" alt="Image not found">
+            <figure class="post_block">
+                <img src="img/TCGhostReconBreakpoint.jpg" alt="Image not found">
                 <p class="post_article"><a href="">Ghost Recon Breakpoint - трейлер, геймплей, детали</a></p>
                 <p class="post_info">Date: 10.05.19, Author: <a href="">kopasov</a> </p>
             </figure>
-            <figure>
-                <img src="../MyWebSite/img/TCGhostReconBreakpoint.jpg" alt="Image not found">
+            <figure class="post_block">
+                <img src="img/TCGhostReconBreakpoint.jpg" alt="Image not found">
                 <p class="post_article"><a href="">Ghost Recon Breakpoint - трейлер, геймплей, детали</a></p>
                 <p class="post_info">Date: 10.05.19, Author: <a href="">kopasov</a> </p>
             </figure>
-            <figure>
-                <img src="../MyWebSite/img/TCGhostReconBreakpoint.jpg" alt="Image not found">
+            <figure class="post_block">
+                <img src="img/TCGhostReconBreakpoint.jpg" alt="Image not found">
                 <p class="post_article"><a href="">Ghost Recon Breakpoint - трейлер, геймплей, детали</a></p>
                 <p class="post_info">Date: 10.05.19, Author: <a href="">kopasov</a> </p>
             </figure>
-            <figure>
-                <img src="../MyWebSite/img/TCGhostReconBreakpoint.jpg" alt="Image not found">
+            <figure class="post_block">
+                <img src="img/TCGhostReconBreakpoint.jpg" alt="Image not found">
                 <p class="post_article"><a href="">Ghost Recon Breakpoint - трейлер, геймплей, детали</a></p>
                 <p class="post_info">Date: 10.05.19, Author: <a href="">kopasov</a> </p>
             </figure>
-            <figure>
-                <img src="../MyWebSite/img/TCGhostReconBreakpoint.jpg" alt="Image not found">
+            <figure class="post_block">
+                <img src="img/TCGhostReconBreakpoint.jpg" alt="Image not found">
                 <p class="post_article"><a href="">Ghost Recon Breakpoint - трейлер, геймплей, детали</a></p>
                 <p class="post_info">Date: 10.05.19, Author: <a href="">kopasov</a> </p>
             </figure>
-            <figure>
-                <img src="../MyWebSite/img/TCGhostReconBreakpoint.jpg" alt="Image not found">
+            <figure class="post_block">
+                <img src="img/TCGhostReconBreakpoint.jpg" alt="Image not found">
                 <p class="post_article"><a href="">Ghost Recon Breakpoint - трейлер, геймплей, детали</a></p>
                 <p class="post_info">Date: 10.05.19, Author: <a href="">kopasov</a> </p>
             </figure>
-            <figure>
-                <img src="../MyWebSite/img/TCGhostReconBreakpoint.jpg" alt="Image not found">
+            <figure class="post_block">
+                <img src="img/TCGhostReconBreakpoint.jpg" alt="Image not found">
                 <p class="post_article"><a href="">Ghost Recon Breakpoint - трейлер, геймплей, детали</a></p>
                 <p class="post_info">Date: 10.05.19, Author: <a href="">kopasov</a> </p>
             </figure>
-            <figure>
-                <img src="../MyWebSite/img/TCGhostReconBreakpoint.jpg" alt="Image not found">
+            <figure class="post_block">
+                <img src="img/TCGhostReconBreakpoint.jpg" alt="Image not found">
                 <p class="post_article"><a href="">Ghost Recon Breakpoint - трейлер, геймплей, детали</a></p>
                 <p class="post_info">Date: 10.05.19, Author: <a href="">kopasov</a> </p>
             </figure>
-            <figure>
-                <img src="../MyWebSite/img/TCGhostReconBreakpoint.jpg" alt="Image not found">
+            <figure class="post_block">
+                <img src="img/TCGhostReconBreakpoint.jpg" alt="Image not found">
                 <p class="post_article"><a href="">Ghost Recon Breakpoint - трейлер, геймплей, детали</a></p>
                 <p class="post_info">Date: 10.05.19, Author: <a href="">kopasov</a> </p>
             </figure>
@@ -120,10 +122,10 @@
         </div>
     </main>
     <footer>
-        <a href=""><img class="social_networks" src="../MyWebSite/img/vk.svg"></a>
-        <a href=""><img class="social_networks" src="../MyWebSite/img/facebook.svg"></a>
-        <a href=""><img class="social_networks" src="../MyWebSite/img/twiter.svg"></a>
-        <a href=""><img class="social_networks" src="../MyWebSite/img/youtube.svg"></a>
+        <a href="https://vk.com"><img class="social_networks" src="img/vk.svg"></a>
+        <a href="https://facebook.com"><img class="social_networks" src="img/facebook.svg"></a>
+        <a href="https://twitter.com"><img class="social_networks" src="img/twiter.svg"></a>
+        <a href="https://www.youtube.com"><img class="social_networks" src="img/youtube.svg"></a>
     </footer>
 </body>
 </html>
